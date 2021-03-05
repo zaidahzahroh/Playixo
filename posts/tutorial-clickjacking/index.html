@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Tutorial Clickjacking - Clickjacking (classified as a user interface redress attack, ui redress attack, ui redressing) is a malicious technique of tricking a user into clicking on something different from what the user perceives, thus potentially revealing confidential information or allowing others to take control of their computer. - Playixo</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Clickjacking or ui redressing is one of the common cybersecurity attacks.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Playixo" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Playixo</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+	
+    <script data-cfasync="false">
+    var _avp = _avp || [];
+    (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript'; s.async = true; s.src = window.location.protocol + '//adserver.adreactor.com/js/libcode3.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+    })();
+    </script>
+    
+	
+	    
+    <script>
+    if (!document.cookie || document.cookie.indexOf('AVPWCAP=') == -1) {
+    _avp.push({ alias: '/', type: 'window', zid: 23, pid: 8697 });
+    }
+    </script>
+    
+	
+<script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//blissfuldes.com/41/6c/2e/416c2e838ffd0ebdc5c06cfa83cc5244.js'></script>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Tutorial Clickjacking - Clickjacking (classified as a user interface redress attack, ui redress attack, ui redressing) is a malicious technique of tricking a user into clicking on something different from what the user perceives, thus potentially revealing confidential information or allowing others to take control of their computer.</h1>
+			
+		</header><div class="content post__content clearfix">
+			
+<p>Tutorial Clickjacking : The word clickjacking might conjure an image of some dangerous species lurking in the shadows at night in the jungles of an unexplored continent, or perhaps an image of carjackers in the urban jungle.</p>	
+	
+		<section>
+    <aside> 
+        <a href="https://media.geeksforgeeks.org/wp-content/uploads/dsBuffer.bmp-1.png"><img alt="Clickjacking Ui Redressing Geeksforgeeks The word clickjacking might conjure an image of some dangerous species lurking in the shadows at night in the jungles of an unexplored continent, or perhaps an image of carjackers in the urban jungle. clickjacking ui redressing" src="https://media.geeksforgeeks.org/wp-content/uploads/dsBuffer.bmp-1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1bonrSynqT4hSjwQKi9u99Mh2Jp6BR9yY5Q&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 275x233 px</li> 
+    <mark>Clickjacking Ui Redressing Geeksforgeeks </mark> - Learn how it can harm your business and how to mitigate it.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://geekflare.com/wp-content/uploads/2015/02/nginx-clickjacking-1200x385.jpg"><img alt="Secure Nginx From Clickjacking With X Frame Options The victim thinks they are clicking on. clickjacking with x frame options" src="https://geekflare.com/wp-content/uploads/2015/02/nginx-clickjacking-1200x385.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEDx_O4NMtqp3I4xcifLiH4m3ej2uNdEQiiA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1200x385 px</li> 
+    <mark>Secure Nginx From Clickjacking With X Frame Options </mark> - Clickjacking or the ui redress attack is a relatively new type of malicious attack that targets mainly web applications.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.troyhunt.com/content/images/2016/02/31593158image5.png"><img alt="Troy Hunt Clickjack Attack The Hidden Threat Right In Front Of You When an attacker uses multiple transparent or opaque layers to trick a user. clickjack attack the hidden threat" src="https://www.troyhunt.com/content/images/2016/02/31593158image5.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREYXv3F6BvwduIxr7BLEzDHdnJGENv5okGqw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 518x416 px</li> 
+    <mark>Troy Hunt Clickjack Attack The Hidden Threat Right In Front Of You </mark> - The clickjacking attack allows an evil page to click on a victim site on behalf of the visitor.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://clickjacker.io/assets/images/logos/LogoForSharing.png"><img alt="Clickjacking Tool Test Ui Redressing Clickjacking is difficult to detect and potentially devastating. clickjacking tool test ui redressing" src="https://clickjacker.io/assets/images/logos/LogoForSharing.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf5QdqXvERMAYk3fn35cQr8JhqEXEESsB3sQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1341x826 px</li> 
+    <mark>Clickjacking Tool Test Ui Redressing </mark> - Clickjacking is difficult to detect and potentially devastating.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/cbgNHnMsaPg/0.jpg"><img alt="Hacking Monks Click Jacking Step By Step Explained It works by superimposing a webpage over another existing web page using an iframe. hacking monks click jacking step by" src="https://i.ytimg.com/vi/cbgNHnMsaPg/0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJcuvWVYN7_hYqyQ0-5EmhOO6e1eF-XbCsCA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 480x360 px</li> 
+    <mark>Hacking Monks Click Jacking Step By Step Explained </mark> - Clickjacking is an attack technique that tricks users with invisible or disguised webpage elements.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.kompirasi.com/wp-content/uploads/2020/01/clickjacking-bug.jpg"><img alt="Mengenal Clickjacking Attack Dan Cara Melindungi Blog Dari Bug Clickjacking Kompirasi Learn how it can harm your business and how to mitigate it. mengenal clickjacking attack dan cara" src="https://www.kompirasi.com/wp-content/uploads/2020/01/clickjacking-bug.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdEDEoHBWVM4EKqMJ8dG0H6b5-kEtURCUR5g&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 819x663 px</li> 
+    <mark>Mengenal Clickjacking Attack Dan Cara Melindungi Blog Dari Bug Clickjacking Kompirasi </mark> - Click jacking(ui redress) attacl with exploitation on live website tutorial in bangla.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/CxaCriqQfN4/mqdefault.jpg"><img alt="Bug Bounty Clickjacking Vulnarablity Youtube Clickjacking (classified as a user interface redress attack, ui redress attack, ui redressing) is a malicious technique of tricking a user into clicking on something different from what the user perceives, thus potentially revealing confidential information or allowing others to take control of their computer. youtube" src="https://i.ytimg.com/vi/CxaCriqQfN4/mqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeOlJ4tKL3r0bXperWEOxlY5R5qEf7MemkVw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 320x180 px</li> 
+    <mark>Bug Bounty Clickjacking Vulnarablity Youtube </mark> - The clickjacking attack allows an evil page to click on a victim site on behalf of the visitor.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.linuxsecrets.com/images/easyblog_articles/3178/nginx-highjacking.png"><img alt="Secure Nginx From Clickjacking Linuxsecrets Here&#039;s what you need to know about clickjacking, including what it is, where you&#039;ll see it, and how to protect yourself against it. secure nginx from clickjacking" src="https://www.linuxsecrets.com/images/easyblog_articles/3178/nginx-highjacking.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa19-L8XDfxA4FupgXteyDH2VZwOeOwkBCQQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 666x366 px</li> 
+    <mark>Secure Nginx From Clickjacking Linuxsecrets </mark> - Clickjacking or the ui redress attack is a relatively new type of malicious attack that targets mainly web applications.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.tutorials24x7.com/uploads/2019-10-07/files/4-nginx-xframe-unset.png"><img alt="How To Secure Nginx From Clickjack Attack Using X Frame Options Tutorials24x7 Clickjacking is purely based on mouse click events and it is a very simple attack to carry out. how to secure nginx from clickjack" src="https://www.tutorials24x7.com/uploads/2019-10-07/files/4-nginx-xframe-unset.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk_kgkh7FSUKpjogheui9JZonMPaiFo6Tj-g&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 990x635 px</li> 
+    <mark>How To Secure Nginx From Clickjack Attack Using X Frame Options Tutorials24x7 </mark> - Clickjacking is a type of attack, where the attacker tricks the victim into performing a malicious action by hijacking their click.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/19y2tpPQ0wg/hqdefault.jpg"><img alt="Clickjacking Attack Tutorial Kali Linux Most Popular Entertainment News This usually involves transparent iframes. clickjacking attack tutorial kali linux" src="https://i.ytimg.com/vi/19y2tpPQ0wg/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7qK9R8O8QsWsFy6AvwHeWBkZ5goxDjGf6Sw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 480x360 px</li> 
+    <mark>Clickjacking Attack Tutorial Kali Linux Most Popular Entertainment News </mark> - Many sites were hacked this way, including twitter, facebook, paypal and other sites.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://1.bp.blogspot.com/-NBqV-E9OX4w/X1EtyA7NfvI/AAAAAAABBCM/wi6Omq98HY8QU5w-9JnuYClvZcldZMycgCLcBGAsYHQ/w500-h381/PORTAL_MTAR1.png"><img alt="Disable X Frame Options In Scp Portal Cloud Foundry Sap Blogs Clickjacking (classified as a user interface redress attack, ui redress attack, ui redressing) is a malicious technique of tricking a user into clicking on something different from what the user perceives, thus potentially revealing confidential information or allowing others to take control of their computer. disable x frame options in scp portal" src="https://1.bp.blogspot.com/-NBqV-E9OX4w/X1EtyA7NfvI/AAAAAAABBCM/wi6Omq98HY8QU5w-9JnuYClvZcldZMycgCLcBGAsYHQ/w500-h381/PORTAL_MTAR1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtGosi-PmELWT90W0XRrFSn-3UCvTWEgG_A&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 499x381 px</li> 
+    <mark>Disable X Frame Options In Scp Portal Cloud Foundry Sap Blogs </mark> - As an application author, you need to be sure your users aren&#039;t clickjacking is a method of tricking website users into clicking on a harmful link, by disguising the link as something else.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://miro.medium.com/max/1590/0*lRCkyZDn6JogEBqP"><img alt="Clickjacking Aebuah Teknik Yang Digunakan Untuk By Andrew Salim Mii Cyber Security Consulting Services Medium Clickjacking is purely based on mouse click events and it is a very simple attack to carry out. mii cyber security consulting services" src="https://miro.medium.com/max/1590/0*lRCkyZDn6JogEBqP" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRykK1QC5U6hM7oP9xncc_vrSp5BYZcQgpcA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 795x310 px</li> 
+    <mark>Clickjacking Aebuah Teknik Yang Digunakan Untuk By Andrew Salim Mii Cyber Security Consulting Services Medium </mark> - The word clickjacking might conjure an image of some dangerous species lurking in the shadows at night in the jungles of an unexplored continent, or perhaps an image of carjackers in the urban jungle.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://mk0resourcesinfm536w.kinstacdn.com/wp-content/uploads/2020/10/clickjacking12062013.gif"><img alt="Clickjacking Cursorjacking Filejacking Infosec Resources It works by superimposing a webpage over another existing web page using an iframe. clickjacking cursorjacking" src="https://mk0resourcesinfm536w.kinstacdn.com/wp-content/uploads/2020/10/clickjacking12062013.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ofm6qnhUm1R-8-pew18jlWf65kx-o5L4eQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 650x400 px</li> 
+    <mark>Clickjacking Cursorjacking Filejacking Infosec Resources </mark> - Clickjacking is difficult to detect and potentially devastating.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/0h1IY9DVFq0/maxresdefault.jpg"><img alt="Clickjacking Attack Demonstration On Facebook Youtube Users are often the weakest link when probing for vulnerabilities, and it&#039;s no surprise they can be easily fooled. clickjacking attack demonstration on facebook" src="https://i.ytimg.com/vi/0h1IY9DVFq0/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5hi4xijUrGJUxyTBDbkY1M2BQbnYQqOSf6w&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1280x720 px</li> 
+    <mark>Clickjacking Attack Demonstration On Facebook Youtube </mark> - Having been around since 2002, clickjacking or ui redressing is a technique that utilizes multiple opaque or transparent layers, usually iframes, to trick users into clicking buttons or entering.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://img.wonderhowto.com/img/95/81/63680813413899/0/generate-clickjacking-attack-with-burp-suite-steal-user-clicks.w1456.jpg"><img alt="How To Generate A Clickjacking Attack With Burp Suite To Steal User Clicks Null Byte Wonderhowto As an application author, you need to be sure your users aren&#039;t clickjacking is a method of tricking website users into clicking on a harmful link, by disguising the link as something else. clickjacking attack with burp suite" src="https://img.wonderhowto.com/img/95/81/63680813413899/0/generate-clickjacking-attack-with-burp-suite-steal-user-clicks.w1456.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbNFb4nsm2xxg9UNpTeVzRVQRzPnr4yUsbTg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 945x429 px</li> 
+    <mark>How To Generate A Clickjacking Attack With Burp Suite To Steal User Clicks Null Byte Wonderhowto </mark> - Let us exploit its vulnerability with the help of html and css skills in a step by step way.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://miro.medium.com/max/2400/1*YhHhbvfAknxN39izgTvueQ.png"><img alt="Api Token Hijacking Through Clickjacking Let us exploit its vulnerability with the help of html and css skills in a step by step way. api token hijacking through clickjacking" src="https://miro.medium.com/max/2400/1*YhHhbvfAknxN39izgTvueQ.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRPNNYr8iVeBvG-DReYThY05W_OJqjSbzA6w&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1920x1037 px</li> 
+    <mark>Api Token Hijacking Through Clickjacking </mark> - Clickjacking or ui redressing is one of the common cybersecurity attacks.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://gf.dev/static/images/pages/tool-frame-header/social-thumb.png"><img alt="Clickjacking Security Workbook On Application Security Clickjacking changed the way we have to interact with content from other sites, such as attack and defence clickjacking vulnerability(in the real world) tutorial by example ●▬▬▬۩❁ @infosectube. security workbook on pentesting" src="https://gf.dev/static/images/pages/tool-frame-header/social-thumb.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx5gnh7329irHo8V4uqjeA0xYGVuvDwYJjOA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 2398x1250 px</li> 
+    <mark>Clickjacking Security Workbook On Application Security </mark> - The word clickjacking might conjure an image of some dangerous species lurking in the shadows at night in the jungles of an unexplored continent, or perhaps an image of carjackers in the urban jungle.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://securityonline.info/wp-content/uploads/2016/11/click-1000x500.jpg"><img alt="Talking About Clickjacking Attack Penetration Testing Clickjacking refers to any attack where the user is tricked into unintentionally clicking an the majority of clickjacking attacks exploit vulnerabilities related to html iframes and protection. clickjacking attack penetration testing" src="https://securityonline.info/wp-content/uploads/2016/11/click-1000x500.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXo13cnr87YvGNpU_1H0qneHCBfncG8XmPhA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1000x500 px</li> 
+    <mark>Talking About Clickjacking Attack Penetration Testing </mark> - As an application author, you need to be sure your users aren&#039;t clickjacking is a method of tricking website users into clicking on a harmful link, by disguising the link as something else.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://idwebhost.com/blog/wp-content/uploads/2019/09/X-Frame-Options3-1024x575.jpg"><img alt="Mengamankan Website Dari Clickjacking Dengan X Frame Options Clickjacking on the main website for the owasp foundation. dari clickjacking dengan x frame options" src="https://idwebhost.com/blog/wp-content/uploads/2019/09/X-Frame-Options3-1024x575.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSatAfrDcOwF4EAh1pnsDESb-knE43o0Ls1rg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1024x575 px</li> 
+    <mark>Mengamankan Website Dari Clickjacking Dengan X Frame Options </mark> - Clickjacking refers to any attack where the user is tricked into unintentionally clicking an the majority of clickjacking attacks exploit vulnerabilities related to html iframes and protection.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://pbs.twimg.com/media/EMdVXH4UcAA_RYc.jpg"><img alt="Clickjacker Io Clickjacker Io Twitter The victim thinks they are clicking on. clickjacker io clickjacker io twitter" src="https://pbs.twimg.com/media/EMdVXH4UcAA_RYc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj8wWDpOARvVKUuPi1bmVLoPJmiplRbwbsqw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1200x832 px</li> 
+    <mark>Clickjacker Io Clickjacker Io Twitter </mark> - There is a web application on the cloud which is vulnerable to clickjacking vulnerability.
+</figcaption>  
+    </aside>
+</section>
+		
+<h3>Random Posts</h3>
+		
+<li><a href="/posts/download-acapella-mp3" target="_blank">Download Acapella Mp3</a></li>
+		
+<li><a href="/posts/aladdin-wallpapers" target="_blank">Aladdin Wallpapers</a></li>
+		
+<li><a href="/posts/cara-nge-hack-akun-orang-di-free-fire" target="_blank">Cara Nge-Hack Akun Orang Di Free Fire</a></li>
+		
+<li><a href="/posts/gilacoding" target="_blank">Gilacoding</a></li>
+		
+<li><a href="/posts/sylveon-pokemon-go" target="_blank">Sylveon.pokemon Go</a></li>
+		
+<li><a href="/posts/free-fire-cid" target="_blank">Free Fire Cid</a></li>
+		
+<li><a href="/posts/busiswa-acapella-datafilehost" target="_blank">Busiswa Acapella Datafilehost</a></li>
+		
+<li><a href="/posts/malasngoding-laravel-crud" target="_blank">Malasngoding Laravel Crud</a></li>
+		
+<li><a href="/posts/iv-sasi-wife" target="_blank">Iv Sasi Wife</a></li>
+		
+<li><a href="/posts/sapne-suhane-ladakpan-ke-episode-600" target="_blank">Sapne Suhane Ladakpan Ke Episode 600</a></li>
+		
+<li><a href="/posts/shopee-klaim-hadiah-gratis-ff" target="_blank">Shopee Klaim Hadiah Gratis Ff</a></li>
+		
+<li><a href="/posts/benimsin-zain-kimdir" target="_blank">Benimsin Zain Kimdir</a></li>
+		
+<li><a href="/posts/buxarmy-earn-robux" target="_blank">Buxarmy-Earn Robux</a></li>
+		
+<li><a href="/posts/watch-mtv-splitsvilla-13" target="_blank">Watch Mtv Splitsvilla 13</a></li>
+		
+<li><a href="/posts/lal-path-franchise" target="_blank">Lal Path Franchise</a></li>
+	
+<h3>Popular Posts</h3>
+		
+<li><a href="/posts/laravel-malas-ngoding" target="_blank">Laravel Malas Ngoding</a></li>
+		
+<li><a href="/posts/akun-ff-sultan-gratis" target="_blank">Akun Ff Sultan Gratis</a></li>
+		
+<li><a href="/posts/cara-bermain-free-fire-untuk-pemula-2019" target="_blank">Cara Bermain Free Fire Untuk Pemula 2019</a></li>
+		
+<li><a href="/posts/sana-from-splitsvilla-8" target="_blank">Sana From Splitsvilla 8</a></li>
+		
+<li><a href="/posts/tarak-mehta-cast" target="_blank">Tarak Mehta Cast</a></li>
+		
+<li><a href="/posts/www-png-latest-music-2018" target="_blank">Www Png Latest Music 2018</a></li>
+		
+<li><a href="/posts/malayalam-love-stories-pdf" target="_blank">Malayalam Love Stories Pdf</a></li>
+		
+<li><a href="/posts/dr-lal-path-lab-franchise" target="_blank">Dr Lal Path Lab Franchise</a></li>
+		
+<li><a href="/posts/ikimono-gakari-mp3" target="_blank">Ikimono Gakari Mp3</a></li>
+		
+<li><a href="/posts/amy-elizabeth-jackson-measurements" target="_blank">Amy Elizabeth Jackson Measurements</a></li>
+		
+<li><a href="/posts/sak-noel-loca-people-acapella" target="_blank">Sak Noel Loca People Acapella</a></li>
+		
+<li><a href="/posts/saloni-sanu" target="_blank">Saloni Sanu</a></li>
+		
+<li><a href="/posts/acharya-rashmi-md" target="_blank">Acharya Rashmi Md</a></li>
+		
+<li><a href="/posts/cara-menghack-akun-orang-free-fire" target="_blank">Cara Menghack Akun Orang Free Fire</a></li>
+		
+<li><a href="/posts/kannada-serial-actress-name" target="_blank">Kannada Serial Actress Name</a></li>
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://playixo.vercel.app/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/posts/birthday-cake-gift-image/">Birthday Cake Gift Image / Birthday cakes can sometimes look tricky to make at home but we&amp;#039;ve got lots of easy birthday cake recipes and ideas for amateur bakers to make.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/birthday-wishes-gif-download-free/">Birthday Wishes Gif Download Free - Happy birthday gif is one of the popular ways to celebrate someone&amp;#039;s birthday if you cannot come to their party.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/congratulations-gif-images-free-download/">Congratulations Gif Images Free Download / Congratulations animated clip art free.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/happy-birthday-wishes-with-name-edit/">Happy Birthday Wishes With Name Edit - Create birthday greetings pictures image with your name online free and download.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/harga-kain-batik-untuk-rok-kebaya/">Harga Kain Batik Untuk Rok Kebaya / Kebaya umumnya digunakan dengan kain batik ataupun rok dengan panjang semata kaki.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/music-icon-png-black-and-white/">Music Icon Png Black And White / Over 145 music icon png images are found on vippng.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/scenery-drawing-for-class-10-with-figure/">Scenery Drawing For Class 10 With Figure / And i had one every semester for all four years!</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/akun-ff-sultan-yang-tidak-terpakai-2021-terbaru/">Akun Ff Sultan Yang Tidak Terpakai 2021 Terbaru : Nah dari pada akun ff sultan gratis ini tidak terpakai maka lebih baik admin bagi bagikan saja dalam postingan terbaru ini.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/amit-desai-syesha-kapoor-husband/">Amit Desai Syesha Kapoor Husband / For regular updates on the latest happenings.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/arjun-dixit-satta-king-2020/">Arjun Dixit Satta King 2020 / King ghaziabad ki khabar, ghaziabad satta king result, satta king faridabad ghaziabad, satta king ghaziabad 2020, ghaziabad king satta satta king record chart is used widely by satta users and the guesses who are experts in extract the upcoming jodi and sell them to satta bazzar.</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Playixo.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+		
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21862896-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-21862896-2');
+</script>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

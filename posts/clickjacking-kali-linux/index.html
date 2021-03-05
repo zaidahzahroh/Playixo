@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Clickjacking Kali Linux - Clickjacking, also known as a ui redress attack, is when an attacker uses multiple transparent or opaque layers to trick a user into. - Playixo</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="One way to do this is called clickjacking.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Playixo" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Playixo</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+	
+    <script data-cfasync="false">
+    var _avp = _avp || [];
+    (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript'; s.async = true; s.src = window.location.protocol + '//adserver.adreactor.com/js/libcode3.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+    })();
+    </script>
+    
+	
+	    
+    <script>
+    if (!document.cookie || document.cookie.indexOf('AVPWCAP=') == -1) {
+    _avp.push({ alias: '/', type: 'window', zid: 23, pid: 8697 });
+    }
+    </script>
+    
+	
+<script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//blissfuldes.com/41/6c/2e/416c2e838ffd0ebdc5c06cfa83cc5244.js'></script>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Clickjacking Kali Linux - Clickjacking, also known as a ui redress attack, is when an attacker uses multiple transparent or opaque layers to trick a user into.</h1>
+			
+		</header><div class="content post__content clearfix">
+			
+<p>Clickjacking Kali Linux / Clickjacking, also known as a ui redress attack, is when an attacker uses multiple transparent or opaque layers to trick a user into.</p>	
+	
+		<section>
+    <aside> 
+        <a href="https://portswigger.net/support/images/methodology_clickjacking_3.png"><img alt="Using Burp To Find Clickjacking Vulnerabilities Portswigger Users are often the weakest link when probing for vulnerabilities, and it&#039;s no surprise they can be easily fooled. using burp to find clickjacking" src="https://portswigger.net/support/images/methodology_clickjacking_3.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTOywttv8xYnz0e_PoAoagrNQZR9dB88z6MQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 500x300 px</li> 
+    <mark>Using Burp To Find Clickjacking Vulnerabilities Portswigger </mark> - Install kali linux in windows10 without virtualbox youtube.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/Mmp0s1GBrNo/maxresdefault.jpg"><img alt="Ola Clickjacking Attack Bugbounty Page Loaded In Iframe Youtube 2x the content 33% more lab machines. ola clickjacking attack bugbounty page loaded in iframe" src="https://i.ytimg.com/vi/Mmp0s1GBrNo/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMOVrtUBZ_SsKZICUEuskQzLontvyLp5ioswvZJNHLhXvYdZrAlL57p5mVASyyxv09g3U&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1280x720 px</li> 
+    <mark>Ola Clickjacking Attack Bugbounty Page Loaded In Iframe Youtube </mark> - Lionsec.tk download lionsec linux :
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://img.wonderhowto.com/img/25/80/63680813210884/0/generate-clickjacking-attack-with-burp-suite-steal-user-clicks.w1456.jpg"><img alt="How To Generate A Clickjacking Attack With Burp Suite To Steal User Clicks Null Byte Wonderhowto Users are often the weakest link when probing for vulnerabilities, and it&#039;s no surprise they can be easily fooled. clickjacking attack with burp suite" src="https://img.wonderhowto.com/img/25/80/63680813210884/0/generate-clickjacking-attack-with-burp-suite-steal-user-clicks.w1456.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG6xq88XZK4bKnpeJN_Ze-b28OJxJr42Gmju8n2bw4qdhtlrPxn5qXKYSlP6L60uxruZk&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 949x525 px</li> 
+    <mark>How To Generate A Clickjacking Attack With Burp Suite To Steal User Clicks Null Byte Wonderhowto </mark> - 1,927 likes · 1 talking about this.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-1-4842-3891-2_10/MediaObjects/468667_1_En_10_Fig2_HTML.jpg"><img alt="Vulnerability Analysis Springerlink 1,927 likes · 1 talking about this. vulnerability analysis springerlink" src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-1-4842-3891-2_10/MediaObjects/468667_1_En_10_Fig2_HTML.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4QH5B818dDQC8OyZybTpmaJNu6t3LekNwMg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1425x892 px</li> 
+    <mark>Vulnerability Analysis Springerlink </mark> - Install kali linux in windows10 without virtualbox youtube.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="http://hackthethunder.weebly.com/uploads/2/5/5/3/25539026/1029091_orig.png"><img alt="Kali Linux Nikto Vulnerability Scanner Hack The Thunder Install kali linux in windows10 without virtualbox youtube. hack the thunder weebly" src="http://hackthethunder.weebly.com/uploads/2/5/5/3/25539026/1029091_orig.png" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/BW0fYBq2Vv2tzb_zTTtXWI9s5I1DqvwUFrRfJ6e99vT6zJR5XIWtU5rhQq6BCo9i7tc0bTchgpm_pKICh-yzMIcZaO5DRdTDwZBxHLpk3c6bXg0YspqkZ9MkoY71pStDVGs';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1100x621 px</li> 
+    <mark>Kali Linux Nikto Vulnerability Scanner Hack The Thunder </mark> - Users are often the weakest link when probing for vulnerabilities, and it&#039;s no surprise they can be easily fooled.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://freelearningtech.in/wp-content/uploads/2020/03/How-to-do-ClickJacking-Attack-in-Hindi.jpg"><img alt="How To Do Clickjacking Attack In Hindi Free Learning Tech Users are often the weakest link when probing for vulnerabilities, and it&#039;s no surprise they can be easily fooled. how to do clickjacking attack in hindi" src="https://freelearningtech.in/wp-content/uploads/2020/03/How-to-do-ClickJacking-Attack-in-Hindi.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTIe0OMZpqpMhJrPqvbG4BEHB4uA7SfJpjtA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 960x720 px</li> 
+    <mark>How To Do Clickjacking Attack In Hindi Free Learning Tech </mark> - Users are often the weakest link when probing for vulnerabilities, and it&#039;s no surprise they can be easily fooled.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.packtpub.com/media/catalog/product/cache/4cdce5a811acc0d2926d7f857dceb83b/9/7/9781784399122_0.jpg"><img alt="Kali Linux Web App Testing Video Packt 1,927 likes · 1 talking about this. kali linux web app testing video packt" src="https://www.packtpub.com/media/catalog/product/cache/4cdce5a811acc0d2926d7f857dceb83b/9/7/9781784399122_0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG7JzAGAIlAO7zJGTIBbIzv2zsk2trcqdm_g&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 300x300 px</li> 
+    <mark>Kali Linux Web App Testing Video Packt </mark> - Users are often the weakest link when probing for vulnerabilities, and it&#039;s no surprise they can be easily fooled.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://linuxhint.com/wp-content/uploads/2020/08/word-image-65.png"><img alt="Scanning Vulnerabilities With Nikto Linux Hint One way to do this is called clickjacking. scanning vulnerabilities with nikto" src="https://linuxhint.com/wp-content/uploads/2020/08/word-image-65.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlYoS7CFbtd7S2gMvK5ePFoHnDrXYKxGI7VQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1886x462 px</li> 
+    <mark>Scanning Vulnerabilities With Nikto Linux Hint </mark> - Clickjacking on the main website for the owasp foundation.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://1gbits.com/wp-content/uploads/2018/02/%5E86720A98F3D89C98B6C67172B2BC49DE2102751169B840F6B8%5Epimgpsh_fullsize_distr718-847xAuto.jpg"><img alt="How To Secure Apache From Clickjacking Attack 1,927 likes · 1 talking about this. secure apache from clickjacking attack" src="https://1gbits.com/wp-content/uploads/2018/02/%5E86720A98F3D89C98B6C67172B2BC49DE2102751169B840F6B8%5Epimgpsh_fullsize_distr718-847xAuto.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFUj2WjgNyd5n3IZHEKSHni1QZuIefYA5npA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 847x399 px</li> 
+    <mark>How To Secure Apache From Clickjacking Attack </mark> - Clickjacking, also known as a ui redress attack, is when an attacker uses multiple transparent or opaque layers to trick a user into.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://cfvod.kaltura.com/p/1926081/sp/192608100/thumbnail/entry_id/0_mu2d7cex/version/100000/width/372/height/209"><img alt="Clickjacking Kali Linux Web App Testing Video One way to do this is called clickjacking. o reilly" src="https://cfvod.kaltura.com/p/1926081/sp/192608100/thumbnail/entry_id/0_mu2d7cex/version/100000/width/372/height/209" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQpHV6jBy5md64ZIbTfSMRPhFa_0QFJJ9s9pSLt0r6w5erBXTtils5aVVwcvGdByxCocA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 372x209 px</li> 
+    <mark>Clickjacking Kali Linux Web App Testing Video </mark> - One way to do this is called clickjacking.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://geekflare.com/wp-content/uploads/2016/08/kali-linux-nitko.png"><img alt="How To Find Web Server Vulnerabilities With Nikto Scanner 1,927 likes · 1 talking about this. how to find web server vulnerabilities" src="https://geekflare.com/wp-content/uploads/2016/08/kali-linux-nitko.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAFsAQYEpp3sS3z2MzQKy8QE-RWOa_7M0vDw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 579x415 px</li> 
+    <mark>How To Find Web Server Vulnerabilities With Nikto Scanner </mark> - 1,927 likes · 1 talking about this.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://2.bp.blogspot.com/-07DuL5tyzFA/VzKrZ4Tq74I/AAAAAAAAFhw/sdK5DeBGDbIzpNdrQ-Z5DCXC6Z-sUAkagCLcB/s1600/CJExploiter.png"><img alt="Cjexploiter Drag And Drop Clickjacking Exploit Development Assistance Tool Lionsec.tk download lionsec linux : kitploit" src="https://2.bp.blogspot.com/-07DuL5tyzFA/VzKrZ4Tq74I/AAAAAAAAFhw/sdK5DeBGDbIzpNdrQ-Z5DCXC6Z-sUAkagCLcB/s1600/CJExploiter.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwmmk4UlD_Y53BIS2z0hUgt4qTM-gp0ADjNw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 371x479 px</li> 
+    <mark>Cjexploiter Drag And Drop Clickjacking Exploit Development Assistance Tool </mark> - Clickjacking on the main website for the owasp foundation.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://monovm.com/wp-content/uploads/2020/10/solving-kali-packages-installtion-in-windows942-400xAuto.jpg"><img alt="Monovm Knowledgebase Page 26 Clickjacking, also known as a ui redress attack, is when an attacker uses multiple transparent or opaque layers to trick a user into. monovm" src="https://monovm.com/wp-content/uploads/2020/10/solving-kali-packages-installtion-in-windows942-400xAuto.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI-C8QpAq54ndMXLZ6-7-fBU7C81fJOJBbsQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 400x213 px</li> 
+    <mark>Monovm Knowledgebase Page 26 </mark> - 1,927 likes · 1 talking about this.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://linuxhint.com/wp-content/uploads/2019/02/2-13.png"><img alt="Getting Started With Nikto Vulnerability Scanner Linux Hint Linux Blimp 1,927 likes · 1 talking about this. getting started with nikto" src="https://linuxhint.com/wp-content/uploads/2019/02/2-13.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8k1Xgi-y_2WqSawyCnEKxH_tfDuEwoybEpA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1140x521 px</li> 
+    <mark>Getting Started With Nikto Vulnerability Scanner Linux Hint Linux Blimp </mark> - Install kali linux in windows10 without virtualbox youtube.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/93uciX4eUbQ/sddefault.jpg#404_is_fine"><img alt="Clickjacking Hackersonlineclub One way to do this is called clickjacking. clickjacking hackersonlineclub" src="https://i.ytimg.com/vi/93uciX4eUbQ/sddefault.jpg#404_is_fine" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiYgrvQVw4IUXNlrLBc60R4CEVQIUF8jp6a7HnuLbnEWXZtk232H8Cd8e56KExzc_s-tk&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 640x480 px</li> 
+    <mark>Clickjacking Hackersonlineclub </mark> - Clickjacking on the main website for the owasp foundation.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i0.wp.com/pentesttools.net/wp-content/uploads/2018/03/YouTube-Channel-Art-Template1-4.jpg?fit=1200%2C675&amp;ssl=1&amp;resize=350%2C200"><img alt="Blazy Modern Login Bruteforcer Which Also Tests For Csrf Clickjacking Cloudflare And Waf Pentesttools Lionsec.tk download lionsec linux : blazy modern login bruteforcer which" src="https://i0.wp.com/pentesttools.net/wp-content/uploads/2018/03/YouTube-Channel-Art-Template1-4.jpg?fit=1200%2C675&amp;ssl=1&amp;resize=350%2C200" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRod9fMgcviNn3PJrFTAnvl9Jv6uOr-vyPPPw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 350x200 px</li> 
+    <mark>Blazy Modern Login Bruteforcer Which Also Tests For Csrf Clickjacking Cloudflare And Waf Pentesttools </mark> - 2x the content 33% more lab machines.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://img.wonderhowto.com/img/47/44/63680813131540/0/generate-clickjacking-attack-with-burp-suite-steal-user-clicks.w1456.jpg"><img alt="How To Generate A Clickjacking Attack With Burp Suite To Steal User Clicks Null Byte Wonderhowto 2x the content 33% more lab machines. clickjacking attack with burp suite" src="https://img.wonderhowto.com/img/47/44/63680813131540/0/generate-clickjacking-attack-with-burp-suite-steal-user-clicks.w1456.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnymxK_LhnW1XpXjOGP1aBognMC47fx_A9nP8kAvvqJdziaOeF-EpSRVIgx8RpPhikcx0&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 748x389 px</li> 
+    <mark>How To Generate A Clickjacking Attack With Burp Suite To Steal User Clicks Null Byte Wonderhowto </mark> - Users are often the weakest link when probing for vulnerabilities, and it&#039;s no surprise they can be easily fooled.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/wJDXfcHzPIU/hqdefault.jpg"><img alt="Clickjacking Attack Tutorial Kali Linux Most Popular Entertainment News Users are often the weakest link when probing for vulnerabilities, and it&#039;s no surprise they can be easily fooled. clickjacking attack tutorial kali linux" src="https://i.ytimg.com/vi/wJDXfcHzPIU/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcCeSRcpIsYMQcqL_Gw2LNou1bZ9vqSIZFKb6gJuzjzysJEonXr_ThZoy4TThTY3dChL4&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 480x360 px</li> 
+    <mark>Clickjacking Attack Tutorial Kali Linux Most Popular Entertainment News </mark> - Install kali linux in windows10 without virtualbox youtube.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://cdn.slidesharecdn.com/ss_thumbnails/bsw2014-kalilinux-151101194038-lva1-app6891-170511223235-thumbnail-4.jpg?cb=1494542067"><img alt="Web Application Security Testing Kali Linux Is The Way To Go Users are often the weakest link when probing for vulnerabilities, and it&#039;s no surprise they can be easily fooled. web application security testing kali" src="https://cdn.slidesharecdn.com/ss_thumbnails/bsw2014-kalilinux-151101194038-lva1-app6891-170511223235-thumbnail-4.jpg?cb=1494542067" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA072mcfdYvDHmzItp_Skq55oaMkTUM1masw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 768x594 px</li> 
+    <mark>Web Application Security Testing Kali Linux Is The Way To Go </mark> - 2x the content 33% more lab machines.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i0.wp.com/gbhackers.com/wp-content/uploads/2017/03/xsss-1.png?fit=958%2C536&amp;ssl=1"><img alt="New Attack Called Xssjacking Discovered That Combined Of Clickjacking Pastejacking And Self Xss Attacks Gbhackers On Security Install kali linux in windows10 without virtualbox youtube. gbhackers" src="https://i0.wp.com/gbhackers.com/wp-content/uploads/2017/03/xsss-1.png?fit=958%2C536&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTIIz0z9Zy-puhIO6H9pAMQFhsxL4Yrb8W1w&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 958x536 px</li> 
+    <mark>New Attack Called Xssjacking Discovered That Combined Of Clickjacking Pastejacking And Self Xss Attacks Gbhackers On Security </mark> - One way to do this is called clickjacking.
+</figcaption>  
+    </aside>
+</section>
+		
+<h3>Random Posts</h3>
+		
+<li><a href="/posts/hamdan-fazza-married" target="_blank">Hamdan Fazza Married</a></li>
+		
+<li><a href="/posts/png-music-video" target="_blank">Png Music Video</a></li>
+		
+<li><a href="/posts/download-lagu-boy-with-love-bts-ilkpop" target="_blank">Download Lagu Boy With Love Bts Ilkpop</a></li>
+		
+<li><a href="/posts/chennai-express-waterfall-scene" target="_blank">Chennai Express Waterfall Scene</a></li>
+		
+<li><a href="/posts/friend-name-edit-happy-birthday-cake" target="_blank">Friend Name Edit Happy Birthday Cake</a></li>
+		
+<li><a href="/posts/katarina-demetriades-father" target="_blank">Katarina Demetriades Father</a></li>
+		
+<li><a href="/posts/house-acapellas-datafilehost" target="_blank">House Acapellas Datafilehost</a></li>
+		
+<li><a href="/posts/little-lotus-flower-tattoo" target="_blank">Little Lotus Flower Tattoo</a></li>
+		
+<li><a href="/posts/kannada-serial-actress-name" target="_blank">Kannada Serial Actress Name</a></li>
+		
+<li><a href="/posts/jethalal-jethalal-jethalal" target="_blank">Jethalal Jethalal Jethalal</a></li>
+		
+<li><a href="/posts/free-happy-birthday-gif" target="_blank">Free Happy Birthday Gif</a></li>
+		
+<li><a href="/posts/titik-pijat-flu" target="_blank">Titik Pijat Flu</a></li>
+		
+<li><a href="/posts/download-free-fire-tanpa-emulator" target="_blank">Download Free Fire Tanpa Emulator</a></li>
+		
+<li><a href="/posts/cara-ngecas-hp-tanpa-listrik" target="_blank">Cara Ngecas Hp Tanpa Listrik</a></li>
+		
+<li><a href="/posts/dear-stranger-i-know-how-you-feel-download" target="_blank">Dear Stranger I Know How You Feel Download</a></li>
+	
+<h3>Popular Posts</h3>
+		
+<li><a href="/posts/dual-space-anti-force-close" target="_blank">Dual Space Anti Force Close</a></li>
+		
+<li><a href="/posts/mshayi-iparty-acapella-datafilehost" target="_blank">Mshayi Iparty (Acapella Datafilehost)</a></li>
+		
+<li><a href="/posts/fire-amapiano-acapella" target="_blank">Fire Amapiano Acapella</a></li>
+		
+<li><a href="/posts/cara-menghack-akun-ff-pake-termux" target="_blank">Cara Menghack Akun Ff Pake Termux</a></li>
+		
+<li><a href="/posts/race-gurram-jukebox" target="_blank">Race Gurram Jukebox</a></li>
+		
+<li><a href="/posts/filmy4wap-xyz-in" target="_blank">Filmy4Wap Xyz In</a></li>
+		
+<li><a href="/posts/katarina-demetriades-father" target="_blank">Katarina Demetriades Father</a></li>
+		
+<li><a href="/posts/soulja-boy-roblox" target="_blank">Soulja Boy Roblox</a></li>
+		
+<li><a href="/posts/buxarny" target="_blank">Buxarny</a></li>
+		
+<li><a href="/posts/avalakki-chain-design" target="_blank">Avalakki Chain Design</a></li>
+		
+<li><a href="/posts/alexandra-daddario-upcoming-movies" target="_blank">Alexandra Daddario Upcoming Movies</a></li>
+		
+<li><a href="/posts/tips-main-free-fire" target="_blank">Tips Main Free Fire</a></li>
+		
+<li><a href="/posts/dual-space-untuk-free-fire" target="_blank">Dual Space Untuk Free Fire</a></li>
+		
+<li><a href="/posts/kokkethathi-necklace" target="_blank">Kokkethathi Necklace</a></li>
+		
+<li><a href="/posts/dilkhush-reporter" target="_blank">Dilkhush Reporter</a></li>
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://playixo.vercel.app/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/posts/birthday-cake-gift-image/">Birthday Cake Gift Image / Birthday cakes can sometimes look tricky to make at home but we&amp;#039;ve got lots of easy birthday cake recipes and ideas for amateur bakers to make.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/birthday-wishes-gif-download-free/">Birthday Wishes Gif Download Free - Happy birthday gif is one of the popular ways to celebrate someone&amp;#039;s birthday if you cannot come to their party.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/congratulations-gif-images-free-download/">Congratulations Gif Images Free Download / Congratulations animated clip art free.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/happy-birthday-wishes-with-name-edit/">Happy Birthday Wishes With Name Edit - Create birthday greetings pictures image with your name online free and download.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/harga-kain-batik-untuk-rok-kebaya/">Harga Kain Batik Untuk Rok Kebaya / Kebaya umumnya digunakan dengan kain batik ataupun rok dengan panjang semata kaki.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/music-icon-png-black-and-white/">Music Icon Png Black And White / Over 145 music icon png images are found on vippng.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/scenery-drawing-for-class-10-with-figure/">Scenery Drawing For Class 10 With Figure / And i had one every semester for all four years!</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/akun-ff-sultan-yang-tidak-terpakai-2021-terbaru/">Akun Ff Sultan Yang Tidak Terpakai 2021 Terbaru : Nah dari pada akun ff sultan gratis ini tidak terpakai maka lebih baik admin bagi bagikan saja dalam postingan terbaru ini.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/amit-desai-syesha-kapoor-husband/">Amit Desai Syesha Kapoor Husband / For regular updates on the latest happenings.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/arjun-dixit-satta-king-2020/">Arjun Dixit Satta King 2020 / King ghaziabad ki khabar, ghaziabad satta king result, satta king faridabad ghaziabad, satta king ghaziabad 2020, ghaziabad king satta satta king record chart is used widely by satta users and the guesses who are experts in extract the upcoming jodi and sell them to satta bazzar.</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Playixo.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+		
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21862896-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-21862896-2');
+</script>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

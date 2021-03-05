@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Malasngoding Crud Laravel - Before anyone asks, i&amp;#039;ve looked into crud generators and i know all about the laravel resource routes, but that&amp;#039;s not exactly what i&amp;#039;m. - Playixo</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Here we will make simple crud example of item module.if you are fresher in angularjs than you dont need to worry about this.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Playixo" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Playixo</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+	
+    <script data-cfasync="false">
+    var _avp = _avp || [];
+    (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript'; s.async = true; s.src = window.location.protocol + '//adserver.adreactor.com/js/libcode3.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+    })();
+    </script>
+    
+	
+	    
+    <script>
+    if (!document.cookie || document.cookie.indexOf('AVPWCAP=') == -1) {
+    _avp.push({ alias: '/', type: 'window', zid: 23, pid: 8697 });
+    }
+    </script>
+    
+	
+<script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//blissfuldes.com/41/6c/2e/416c2e838ffd0ebdc5c06cfa83cc5244.js'></script>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Malasngoding Crud Laravel - Before anyone asks, i&amp;#039;ve looked into crud generators and i know all about the laravel resource routes, but that&amp;#039;s not exactly what i&amp;#039;m.</h1>
+			
+		</header><div class="content post__content clearfix">
+			
+<p>Malasngoding Crud Laravel / Let's bring back the example in our first lesson.</p>	
+	
+		<section>
+    <aside> 
+        <a href="https://i0.wp.com/www.malasngoding.com/wp-content/uploads/2017/01/4.png?resize=650,400"><img alt="Cara Membuat Crud Dengan Java Mysql Part 1 Malas Ngoding Cute766 But this was using laravel passport. java mysql part 1 malas ngoding" src="https://i0.wp.com/www.malasngoding.com/wp-content/uploads/2017/01/4.png?resize=650,400" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFDhdcxd7SqtFYIGROCQEBC_0o7-bEmTUc3Q&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 650x400 px</li> 
+    <mark>Cara Membuat Crud Dengan Java Mysql Part 1 Malas Ngoding Cute766 </mark> - #laravel laravel 5.5 &amp; vuejs 2 crud example step by step.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i0.wp.com/www.malasngoding.com/wp-content/uploads/2017/01/10.png?resize=650,400"><img alt="Cara Membuat Crud Dengan Java Mysql Part 1 Malas Ngoding Cute766 #laravel laravel 5.5 &amp; vuejs 2 crud example step by step. java mysql part 1 malas ngoding" src="https://i0.wp.com/www.malasngoding.com/wp-content/uploads/2017/01/10.png?resize=650,400" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzFH6zI8Fn_De-dX03VnhKddTloE4GMe2xZA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 650x400 px</li> 
+    <mark>Cara Membuat Crud Dengan Java Mysql Part 1 Malas Ngoding Cute766 </mark> - Resource controllers can make life much easier and takes advantage of some cool laravel routi.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/iDYYKXvFUhw/hqdefault.jpg"><img alt="Tutorial Laravel 4 Malasngoding The Latest Entertainment News Making crud with laravel 8 is quit easy. entertainment news" src="https://i.ytimg.com/vi/iDYYKXvFUhw/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLPc5EC0OVVAU4vo_NA4JCSJ4qtJ8jx488gg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 480x360 px</li> 
+    <mark>Tutorial Laravel 4 Malasngoding The Latest Entertainment News </mark> - Source code crud laravel menggunakan eloquent orm.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.kodementor.com/wp-content/uploads/2018/03/laravel-56-guzzle-output_002.png"><img alt="Rezims Mauve Persona Laravel Controller Ipoor Org Using mongodb with laravel, we can use same eloquent functionality. rezims mauve persona laravel controller" src="https://www.kodementor.com/wp-content/uploads/2018/03/laravel-56-guzzle-output_002.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBk6Oy_sVt3vfRSjaxcQktCCoCB1WCACV4Zg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1018x481 px</li> 
+    <mark>Rezims Mauve Persona Laravel Controller Ipoor Org </mark> - Laravel 8 vue js crud application (spa) install 8 laravel 8 app connecting app to database in this laravel vue spa crud app, you have learned how to implement single web page.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i.ytimg.com/vi/r4St0JAYiF8/maxresdefault.jpg"><img alt="Tutorial Crud Create Read Update Delete Php Mysql Menggunakan Template Bootstrap Youtube In this lesson we will create login, registration and full crud system with in this laravel jwt authentication tutorial we are going to make this kind of api using jwt. mysql menggunakan template bootstrap" src="https://i.ytimg.com/vi/r4St0JAYiF8/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ56MQc0ms2nWOygQFT5_wjfuGz5UgjHLjoA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1280x720 px</li> 
+    <mark>Tutorial Crud Create Read Update Delete Php Mysql Menggunakan Template Bootstrap Youtube </mark> - Here we will make simple crud example of item module.if you are fresher in angularjs than you dont need to worry about this.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://vegibit.com/wp-content/uploads/2017/04/php-artisan-help-make-controller.png"><img alt="Rezims Mauve Persona Laravel Controller Ipoor Org Source code crud laravel menggunakan eloquent orm. rezims mauve persona laravel controller" src="https://vegibit.com/wp-content/uploads/2017/04/php-artisan-help-make-controller.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTi1JILxteyXNwQWZa9CGqGnH77sFyJC9yEQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 746x332 px</li> 
+    <mark>Rezims Mauve Persona Laravel Controller Ipoor Org </mark> - Now, just open your laravel applications.env file and make the following database related changes.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.malasngoding.com/wp-content/uploads/2018/12/Membuat-crud-pada-laravel.png"><img alt="Tutorial Laravel 9 Membuat Crud Dengan Laravel Malas Ngoding Laravel 8 vue js crud application (spa) install 8 laravel 8 app connecting app to database in this laravel vue spa crud app, you have learned how to implement single web page. membuat crud dengan laravel malas ngoding" src="https://www.malasngoding.com/wp-content/uploads/2018/12/Membuat-crud-pada-laravel.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ43lv3p8B2MK48vqmyauIL2gs7yWWPyoJ_ig&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1666x854 px</li> 
+    <mark>Tutorial Laravel 9 Membuat Crud Dengan Laravel Malas Ngoding </mark> - Here, i will give you step by step crud operation using livewire in laravel 6, laravel 7 and laravel 8 example.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i0.wp.com/www.malasngoding.com/wp-content/uploads/2018/12/Tutorial-Membuat-Crud-Dengan-Laravel-1024x565.png?resize=650,400"><img alt="Tutorial Membuat Crud Dengan Laravel Malas Ngoding Dokter Andalan Before anyone asks, i&#039;ve looked into crud generators and i know all about the laravel resource routes, but that&#039;s not exactly what i&#039;m. dokter andalan" src="https://i0.wp.com/www.malasngoding.com/wp-content/uploads/2018/12/Tutorial-Membuat-Crud-Dengan-Laravel-1024x565.png?resize=650,400" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT-6ikx6GhQTFZw2ZzD2rrziGCO7qeSMVoyQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 650x400 px</li> 
+    <mark>Tutorial Membuat Crud Dengan Laravel Malas Ngoding Dokter Andalan </mark> - Very simple add, edit, delete, view (crud tutorial), simple crud mongodb is written in c++.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://ombagoes.com/wp-content/uploads/2019/08/Screen-Shot-2019-08-26-at-21.38.59.png"><img alt="09 Laravel Crud Ombagoes Com One of the big problem, that i have encountered with mongodb was when it was about the user. 09 laravel crud ombagoes com" src="https://ombagoes.com/wp-content/uploads/2019/08/Screen-Shot-2019-08-26-at-21.38.59.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYkHCI7eTV3Sgi8wD1RN60ylor13-SfRaM5A&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1218x572 px</li> 
+    <mark>09 Laravel Crud Ombagoes Com </mark> - Resource controllers can make life much easier and takes advantage of some cool laravel routi.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.malasngoding.com/wp-content/uploads/2019/01/CRUD-Laravel-Menggunakan-Eloquent.png"><img alt="Tutorial Laravel 21 Crud Laravel Menggunakan Eloquent Malas Ngoding Laravel 8 vue js crud application (spa) install 8 laravel 8 app connecting app to database in this laravel vue spa crud app, you have learned how to implement single web page. crud laravel menggunakan eloquent" src="https://www.malasngoding.com/wp-content/uploads/2019/01/CRUD-Laravel-Menggunakan-Eloquent.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCK_vRbMDbYvrnvUZMNAZXWKi6sIfgkYuntg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 2880x1602 px</li> 
+    <mark>Tutorial Laravel 21 Crud Laravel Menggunakan Eloquent Malas Ngoding </mark> - Before anyone asks, i&#039;ve looked into crud generators and i know all about the laravel resource routes, but that&#039;s not exactly what i&#039;m.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.malasngoding.com/wp-content/uploads/2018/12/menampilkan-data-dari-database-dengan-laravel.png"><img alt="Tutorial Laravel 9 Membuat Crud Dengan Laravel Malas Ngoding Now, just open your laravel applications.env file and make the following database related changes. membuat crud dengan laravel malas ngoding" src="https://www.malasngoding.com/wp-content/uploads/2018/12/menampilkan-data-dari-database-dengan-laravel.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl3bnHpKCXtznWjt91GO3ISnNptsFEpqO3zg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1246x764 px</li> 
+    <mark>Tutorial Laravel 9 Membuat Crud Dengan Laravel Malas Ngoding </mark> - Laravel has a large and growing community which makes it easy for new developers to find solutions.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://s1.studylibid.com/store/data/004282776_1-7ba4e65a1bb3302b35f37728b6edbfb4-300x300.png"><img alt="Tutorial Laravel 9 Membuat Crud Dengan Laravel Malas Ngoding This post is focused on laravel livewire crud example. tutorial laravel 9 membuat crud dengan" src="https://s1.studylibid.com/store/data/004282776_1-7ba4e65a1bb3302b35f37728b6edbfb4-300x300.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLfokjzh9f7H7tJu7MxkwKJmKSnPnYb0Odmg&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 212x300 px</li> 
+    <mark>Tutorial Laravel 9 Membuat Crud Dengan Laravel Malas Ngoding </mark> - Laravel is one of the fastest growing frameworks for php built by taylor otwell.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.malasngoding.com/wp-content/uploads/2019/01/CRUD-Laravel-Menggunakan-Eloquent-1.png"><img alt="Tutorial Laravel 21 Crud Laravel Menggunakan Eloquent Malas Ngoding Laravel has a large and growing community which makes it easy for new developers to find solutions. crud laravel menggunakan eloquent" src="https://www.malasngoding.com/wp-content/uploads/2019/01/CRUD-Laravel-Menggunakan-Eloquent-1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLBRC1tJnh9Lc25qeJv6L84lr_H7IBYz3mVw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 945x595 px</li> 
+    <mark>Tutorial Laravel 21 Crud Laravel Menggunakan Eloquent Malas Ngoding </mark> - In this lesson we will create login, registration and full crud system with in this laravel jwt authentication tutorial we are going to make this kind of api using jwt.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=574367422913504"><img alt="Laravel Indonesia Home Facebook Resource controllers can make life much easier and takes advantage of some cool laravel routi. facebook" src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=574367422913504" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSGoXZaSm83wKyM9LInTGiZncTKJYhDky7cA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 960x540 px</li> 
+    <mark>Laravel Indonesia Home Facebook </mark> - Using mongodb with laravel, we can use same eloquent functionality.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://weeklyhow.com/wp-content/uploads/2020/09/image-21-1024x309.png"><img alt="Creating A New Laravel App With Free Photos Very simple add, edit, delete, view (crud tutorial), simple crud mongodb is written in c++. free photos" src="https://weeklyhow.com/wp-content/uploads/2020/09/image-21-1024x309.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlV9eisWXY9cez4EmXC3uPO36UNTXnJULtXw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1024x309 px</li> 
+    <mark>Creating A New Laravel App With Free Photos </mark> - #laravel laravel 5.5 &amp; vuejs 2 crud example step by step.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=590546604628919"><img alt="Laravel Indonesia Home Facebook Laravel helps make the process easy using resource controllers. facebook" src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=590546604628919" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT662obyGvEABGvDNMlimSXcC-M7xD1FnDsEQ&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 960x612 px</li> 
+    <mark>Laravel Indonesia Home Facebook </mark> - Making crud with laravel 8 is quit easy.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://www.malasngoding.com/wp-content/uploads/2018/12/membuat-crud-laravel.png"><img alt="Membuat Crud Laravel Malas Ngoding #laravel laravel 5.5 &amp; vuejs 2 crud example step by step. membuat crud laravel malas ngoding" src="https://www.malasngoding.com/wp-content/uploads/2018/12/membuat-crud-laravel.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_pY0HjCxhEiCEyY-jbhgsQFscRc1j2PpYGA&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1060x806 px</li> 
+    <mark>Membuat Crud Laravel Malas Ngoding </mark> - This post is focused on laravel livewire crud example.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://ombagoes.com/wp-content/uploads/2019/08/Screen-Shot-2019-08-28-at-14.49.42-1024x468.png"><img alt="Programing Page 7 Ombagoes Com In this laravel mongodb crud operation tutorial i will separate it in two section. programing page 7 ombagoes com" src="https://ombagoes.com/wp-content/uploads/2019/08/Screen-Shot-2019-08-28-at-14.49.42-1024x468.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7QdzR1Ul9GiRd2ZGqbdCPK2pVGwrdIUiXlw&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 1024x468 px</li> 
+    <mark>Programing Page 7 Ombagoes Com </mark> - Let&#039;s bring back the example in our first lesson.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="http://thewebfosters.com/wp-content/uploads/2017/07/Laravel-Ajax-CRUD-operation-in-Resource-Controller.png"><img alt="Rezims Mauve Persona Laravel Controller Ipoor Org Laravel 5.8 continues the improvements made in the previous release (version 5.7). ipoor org" src="http://thewebfosters.com/wp-content/uploads/2017/07/Laravel-Ajax-CRUD-operation-in-Resource-Controller.png" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/CExBFTleUGPALzEVJUU6YtxpgiIThXTJHvABjhV9Kn2xbbVbT1LctqqNTqP0uHgvsWo_MnsQfhZBkW9-wtg9W6kbCk8Ak6Um_GJUF3vHKT21gkqegaP3VMeTNS9yjeF2jkJdAU4rFvkvdExjkkpcp8yciB19oZljdDdF6ur5wZOO_w';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 670x337 px</li> 
+    <mark>Rezims Mauve Persona Laravel Controller Ipoor Org </mark> - In this laravel mongodb crud operation tutorial i will separate it in two section.
+</figcaption>  
+    </aside>
+    <aside> 
+        <a href="https://i0.wp.com/www.malasngoding.com/wp-content/uploads/2017/01/1.png?resize=650,400"><img alt="Cara Membuat Crud Dengan Java Mysql Part 1 Malas Ngoding Cute766 In this laravel mongodb crud operation tutorial i will separate it in two section. java mysql part 1 malas ngoding" src="https://i0.wp.com/www.malasngoding.com/wp-content/uploads/2017/01/1.png?resize=650,400" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4iJfKJKanqYBYVR_4YhZi9UmqRv8tfgey_Q&amp;usqp=CAU';"></a>
+ <figcaption>
+   <div align="center">
+<li>Original Resolution: 650x400 px</li> 
+    <mark>Cara Membuat Crud Dengan Java Mysql Part 1 Malas Ngoding Cute766 </mark> - Making crud with laravel 8 is quit easy.
+</figcaption>  
+    </aside>
+</section>
+		
+<h3>Random Posts</h3>
+		
+<li><a href="/posts/happy-birthday-surbhi-cake" target="_blank">Happy Birthday Surbhi Cake</a></li>
+		
+<li><a href="/posts/cara-mengatasi-ff-keluar-sendiri" target="_blank">Cara Mengatasi Ff Keluar Sendiri</a></li>
+		
+<li><a href="/posts/main-free-fire-di-pc-tanpa-emulator" target="_blank">Main Free Fire Di Pc Tanpa Emulator</a></li>
+		
+<li><a href="/posts/dj-acapella-downloads" target="_blank">Dj Acapella Downloads</a></li>
+		
+<li><a href="/posts/donwload-apk-ymusic" target="_blank">Donwload Apk Ymusic</a></li>
+		
+<li><a href="/posts/k-kha-g-gh" target="_blank">K Kha G Gh</a></li>
+		
+<li><a href="/posts/mzansi-house-music-acapellas" target="_blank">Mzansi House Music Acapellas</a></li>
+		
+<li><a href="/posts/judai-anil-kapoor-full-movie" target="_blank">Judai Anil Kapoor Full Movie</a></li>
+		
+<li><a href="/posts/space-ff" target="_blank">Space Ff</a></li>
+		
+<li><a href="/posts/siddharth-nigam-2021-girlfriend" target="_blank">Siddharth Nigam 2021 Girlfriend</a></li>
+		
+<li><a href="/posts/ka-kha-ga-gha-gya-tak" target="_blank">Ka Kha Ga Gha Gya Tak</a></li>
+		
+<li><a href="/posts/buxarmy-earn-robux" target="_blank">Buxarmy Earn Robux</a></li>
+		
+<li><a href="/posts/cara-evolve-espeon" target="_blank">Cara Evolve Espeon</a></li>
+		
+<li><a href="/posts/cara-mengirim-ff-lewat-shareit-dan-file" target="_blank">Cara Mengirim Ff Lewat Shareit Dan File</a></li>
+		
+<li><a href="/posts/purvesh-pimple-instagram" target="_blank">Purvesh Pimple Instagram</a></li>
+	
+<h3>Popular Posts</h3>
+		
+<li><a href="/posts/hack-free-fire-akun" target="_blank">Hack Free Fire Akun</a></li>
+		
+<li><a href="/posts/cara-menggunakan-kahoot-gratis" target="_blank">Cara Menggunakan Kahoot Gratis</a></li>
+		
+<li><a href="/posts/cara-nonton-fate" target="_blank">Cara Nonton Fate</a></li>
+		
+<li><a href="/posts/acharya-rashmi-md" target="_blank">Acharya Rashmi Md</a></li>
+		
+<li><a href="/posts/is-subah-jain-married" target="_blank">Is Subah Jain Married</a></li>
+		
+<li><a href="/posts/hack-free-fire-using-termux" target="_blank">Hack Free Fire Using Termux</a></li>
+		
+<li><a href="/posts/zayn-siddique" target="_blank">Zayn Siddique</a></li>
+		
+<li><a href="/posts/busiswa-acapella-datafilehost" target="_blank">Busiswa Acapella Datafilehost</a></li>
+		
+<li><a href="/posts/syp-rapitus-plus" target="_blank">Syp Rapitus Plus</a></li>
+		
+<li><a href="/posts/yts-tv-series-proxy" target="_blank">Yts Tv Series Proxy</a></li>
+		
+<li><a href="/posts/traditional-dance-vector" target="_blank">Traditional Dance Vector</a></li>
+		
+<li><a href="/posts/saisha-paul" target="_blank">Saisha Paul</a></li>
+		
+<li><a href="/posts/commix-download" target="_blank">Commix Download</a></li>
+		
+<li><a href="/posts/hack-akun-orang-di-free-fire" target="_blank">Hack Akun Orang Di Free Fire</a></li>
+		
+<li><a href="/posts/sohan-roy" target="_blank">Sohan Roy</a></li>
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://playixo.vercel.app/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/posts/birthday-cake-gift-image/">Birthday Cake Gift Image / Birthday cakes can sometimes look tricky to make at home but we&amp;#039;ve got lots of easy birthday cake recipes and ideas for amateur bakers to make.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/birthday-wishes-gif-download-free/">Birthday Wishes Gif Download Free - Happy birthday gif is one of the popular ways to celebrate someone&amp;#039;s birthday if you cannot come to their party.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/congratulations-gif-images-free-download/">Congratulations Gif Images Free Download / Congratulations animated clip art free.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/happy-birthday-wishes-with-name-edit/">Happy Birthday Wishes With Name Edit - Create birthday greetings pictures image with your name online free and download.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/harga-kain-batik-untuk-rok-kebaya/">Harga Kain Batik Untuk Rok Kebaya / Kebaya umumnya digunakan dengan kain batik ataupun rok dengan panjang semata kaki.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/music-icon-png-black-and-white/">Music Icon Png Black And White / Over 145 music icon png images are found on vippng.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/scenery-drawing-for-class-10-with-figure/">Scenery Drawing For Class 10 With Figure / And i had one every semester for all four years!</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/akun-ff-sultan-yang-tidak-terpakai-2021-terbaru/">Akun Ff Sultan Yang Tidak Terpakai 2021 Terbaru : Nah dari pada akun ff sultan gratis ini tidak terpakai maka lebih baik admin bagi bagikan saja dalam postingan terbaru ini.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/amit-desai-syesha-kapoor-husband/">Amit Desai Syesha Kapoor Husband / For regular updates on the latest happenings.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/arjun-dixit-satta-king-2020/">Arjun Dixit Satta King 2020 / King ghaziabad ki khabar, ghaziabad satta king result, satta king faridabad ghaziabad, satta king ghaziabad 2020, ghaziabad king satta satta king record chart is used widely by satta users and the guesses who are experts in extract the upcoming jodi and sell them to satta bazzar.</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Playixo.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+		
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21862896-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-21862896-2');
+</script>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
